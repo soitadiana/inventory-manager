@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10">
+
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold mb-6 text-center text-blue-600">Inventory Manager</h1>
+
+        <div class="grid grid-cols-2 gap-4 mb-4">
+            <input id="name" type="text" placeholder="Item Name" class="border p-2 rounded">
+            <input id="supplier" type="text" placeholder="Supplier" class="border p-2 rounded">
+            <input id="qty" type="number" placeholder="Quantity" class="border p-2 rounded">
+            <input id="price" type="number" placeholder="Price ($)" class="border p-2 rounded">
+        </div>
+        <button onclick="createItem()" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mb-6">Add Item</button>
+
+        <h2 class="text-xl font-semibold mb-2">Current Stock</h2>
+        <ul id="itemList" class="space-y-3">
+            </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
