@@ -12,7 +12,6 @@ app.use(bodyParser.json());
 app.use(express.static('public')); 
 
 // Database Connection
-// I have included your correct link with the /inventoryDB name
 mongoose.connect('mongodb+srv://diana:iansane333@cluster0.kyllmlr.mongodb.net/inventoryDB?appName=Cluster0')
 .then(() => console.log("Connected to MongoDB Cloud"))
 .catch(err => console.error("DB Connection Error:", err));
@@ -27,7 +26,7 @@ const ItemSchema = new mongoose.Schema({
 
 const Item = mongoose.model('Item', ItemSchema);
 
-// Routes with Error Logging (The Fix)
+// Routes with Error Logging
 
 // 1. CREATE
 app.post('/api/items', async (req, res) => {

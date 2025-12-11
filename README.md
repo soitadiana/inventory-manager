@@ -17,7 +17,7 @@
    node server.js
 4. Open your browser to: http://localhost:3000
 
-Features
+## Features
 Create new inventory items.
 
 View all items (fetched from MongoDB).

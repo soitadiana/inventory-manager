@@ -1,6 +1,6 @@
 const API_URL = '/api/items';
 
-// READ: Fetch all items on load
+// READ
 document.addEventListener('DOMContentLoaded', fetchItems);
 
 async function fetchItems() {
